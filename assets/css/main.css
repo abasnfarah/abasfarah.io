@@ -3592,7 +3592,8 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			display: inline-block;
-			font-size: 1.75em;
+			font-size: 2.75em;
+      color: #FE8B1A;
 			opacity: 1;
 			padding: 0.35em 1em;
 			position: relative;
@@ -3608,7 +3609,7 @@ input, select, textarea {
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				background: #fff;
+				background: #FE8B1A;
 				content: '';
 				display: block;
 				height: 2px;
@@ -3629,6 +3630,7 @@ input, select, textarea {
 		#banner p {
 			letter-spacing: 0.225em;
 			text-transform: uppercase;
+      color: #FE8B1A;
 		}
 
 			#banner p a {
