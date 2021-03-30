@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## abasfarah.com
 Developing a static personal site using Github pages
 
-Check it out at [abasfarah.com](https://www.abasfarah.com)
+Check it out at [abasfarah.io](https://www.abasfarah.io)
 
 ## Available Scripts
 
