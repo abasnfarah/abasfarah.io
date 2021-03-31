@@ -7,6 +7,7 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import { sizing } from "@material-ui/system";
 import { Avatar } from "@material-ui/core";
+import MyAvatar from "./MyAvatar";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -52,6 +53,10 @@ const useStyles = makeStyles((theme) => ({
     borderRight: `1px solid ${theme.palette.divider}`,
     height: "100vh",
   },
+  large: {
+    width: theme.spacing(30),
+    height: theme.spacing(30),
+  },
 }));
 
 export default function NavBar() {
@@ -73,11 +78,7 @@ export default function NavBar() {
         className={classes.tabs}
         centered={true}
       >
-        <Avatar
-          alt="Abas Farah"
-          src="../../public/CoverPhoto.jpg"
-          className={classes.large}
-        />
+        <MyAvatar />
         <Tab label="Home" {...a11yProps(0)} />
         <Tab label="About" {...a11yProps(1)} />
         <Tab label="Resume" {...a11yProps(2)} />
