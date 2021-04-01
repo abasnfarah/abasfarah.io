@@ -75,7 +75,7 @@ export default function NavBar() {
         className={classes.tabs}
         centered={true}
       >
-        <Box p="5vh">
+        <Box p={9}>
           <MyAvatar />
         </Box>
         <Box pt={10}></Box>
