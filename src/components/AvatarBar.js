@@ -2,11 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import Button from "@material-ui/core/Button";
-import { sizing } from "@material-ui/system";
 import MyAvatar from "./MyAvatar";
 
 function TabPanel(props) {
@@ -35,13 +32,6 @@ TabPanel.propTypes = {
   value: PropTypes.any.isRequired,
 };
 
-function a11yProps(index) {
-  return {
-    id: `vertical-tab-${index}`,
-    "aria-controls": `vertical-tabpanel-${index}`,
-  };
-}
-
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -51,12 +41,15 @@ const useStyles = makeStyles((theme) => ({
   },
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
-    height: "100vh",
-    width: "25vh",
+    height: "30vh",
+  },
+  large: {
+    width: theme.spacing(30),
+    height: theme.spacing(30),
   },
 }));
 
-export default function NavBar() {
+export default function AvatarBar() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -75,42 +68,10 @@ export default function NavBar() {
         className={classes.tabs}
         centered={true}
       >
-        <Box p="5vh">
-          <MyAvatar />
-        </Box>
-        <Box pt={10}></Box>
-
-        <Tab label="Home" {...a11yProps(2)} />
-        <Tab label="About" {...a11yProps(3)} />
-        <Tab label="Resume" {...a11yProps(4)} />
-        <Tab label="Blog" {...a11yProps(5)} />
-        <Tab label="Contact Me" {...a11yProps(6)} />
-        <Box pt={30}></Box>
-        <Box pt={30}>
-          Copyright © 2021 <Box pt={2}></Box>
-          <Button
-            variant="contained"
-            color="primary"
-            href="https://www.twitter.com/abasfarah"
-          >
-            @Abas Farah
-          </Button>
-        </Box>
+        <MyAvatar />
       </Tabs>
-      <TabPanel value={value} index={2}>
+      <TabPanel value={value} index={0}>
         Home
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        About
-      </TabPanel>
-      <TabPanel value={value} index={4}>
-        Resume
-      </TabPanel>
-      <TabPanel value={value} index={5}>
-        Blog
-      </TabPanel>
-      <TabPanel value={value} index={6}>
-        Contact Me
       </TabPanel>
     </div>
   );

@@ -5,8 +5,8 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import Button from "@material-ui/core/Button";
 import { sizing } from "@material-ui/system";
+import { Avatar } from "@material-ui/core";
 import MyAvatar from "./MyAvatar";
 
 function TabPanel(props) {
@@ -52,7 +52,6 @@ const useStyles = makeStyles((theme) => ({
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
     height: "100vh",
-    width: "25vh",
   },
 }));
 
@@ -69,47 +68,32 @@ export default function NavBar() {
       <Tabs
         orientation="vertical"
         variant="fullWidth"
-        value={value}
+        value={value + 1}
         onChange={handleChange}
         aria-label="Navigation Side Bar"
         className={classes.tabs}
         centered={true}
       >
-        <Box p="5vh">
-          <MyAvatar />
-        </Box>
-        <Box pt={10}></Box>
-
-        <Tab label="Home" {...a11yProps(2)} />
-        <Tab label="About" {...a11yProps(3)} />
-        <Tab label="Resume" {...a11yProps(4)} />
-        <Tab label="Blog" {...a11yProps(5)} />
-        <Tab label="Contact Me" {...a11yProps(6)} />
-        <Box pt={30}></Box>
-        <Box pt={30}>
-          Copyright © 2021 <Box pt={2}></Box>
-          <Button
-            variant="contained"
-            color="primary"
-            href="https://www.twitter.com/abasfarah"
-          >
-            @Abas Farah
-          </Button>
-        </Box>
+        <MyAvatar />
+        <Tab label="Home" {...a11yProps(0)} />
+        <Tab label="About" {...a11yProps(1)} />
+        <Tab label="Resume" {...a11yProps(2)} />
+        <Tab label="Blog" {...a11yProps(3)} />
+        <Tab label="Contact Me" {...a11yProps(4)} />
       </Tabs>
-      <TabPanel value={value} index={2}>
+      <TabPanel value={value} index={0}>
         Home
       </TabPanel>
-      <TabPanel value={value} index={3}>
+      <TabPanel value={value} index={1}>
         About
       </TabPanel>
-      <TabPanel value={value} index={4}>
+      <TabPanel value={value} index={2}>
         Resume
       </TabPanel>
-      <TabPanel value={value} index={5}>
+      <TabPanel value={value} index={3}>
         Blog
       </TabPanel>
-      <TabPanel value={value} index={6}>
+      <TabPanel value={value} index={4}>
         Contact Me
       </TabPanel>
     </div>
