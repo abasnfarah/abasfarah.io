@@ -6,6 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import { GitHub, LinkedIn, Twitter } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,6 +38,18 @@ export default function NavBar() {
           <Typography variant="h6" className={classes.title}>
             Abas Farah
           </Typography>
+          <Button color="inherit" href="https://github.com/abasnfarah">
+            <GitHub src="github.com/abasnfarah" />
+          </Button>
+          <Button color="inherit" href="https://twitter.com/abasfarah">
+            <Twitter />
+          </Button>
+          <Button
+            color="inherit"
+            href="https://linkedin.com/in/abas-farah-92268682/"
+          >
+            <LinkedIn />
+          </Button>
         </Toolbar>
       </AppBar>
     </div>
