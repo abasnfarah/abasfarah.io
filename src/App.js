@@ -1,7 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
+import MyAvatar from "./components/MyAvatar";
 import NavBar from "./components/NavBar";
-import AvatarBar from "./components/AvatarBar";
 
 function App() {
   return (
@@ -24,6 +23,7 @@ function App() {
 
     <div className="App">
       <NavBar />
+      <MyAvatar />
     </div>
   );
 }
