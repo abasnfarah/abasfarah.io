@@ -1,10 +1,7 @@
 import { makeStyles, Typography } from "@material-ui/core";
 import React from "react";
-import MyAvatar from "./MyAvatar";
 import mountains from "../static/mountains.jpg";
 import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -31,7 +28,7 @@ export default function Home() {
       <div className={classes.card}>
         <Card>
           <Typography variant="h5" component="h2">
-            Site is currently under construction. For Resume check menu. :)
+            <p>Site is currently under construction.</p>
           </Typography>
         </Card>
       </div>
