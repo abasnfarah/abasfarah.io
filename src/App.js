@@ -36,7 +36,7 @@ const themeDark = createMuiTheme({
 });
 
 function App() {
-  const [light, setLight] = React.useState(true);
+  const [light] = React.useState(true);
 
   return (
     //<div className="App">
