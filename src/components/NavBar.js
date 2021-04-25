@@ -12,7 +12,12 @@ import MenuIcon from "@material-ui/icons/Menu";
 import WorkIcon from "@material-ui/icons/Work";
 import WebIcon from "@material-ui/icons/Web";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import { GitHub, LinkedIn, Twitter } from "@material-ui/icons";
+import {
+  GitHub,
+  LinkedIn,
+  SettingsBrightness,
+  Twitter,
+} from "@material-ui/icons";
 import { Divider } from "@material-ui/core";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
@@ -116,7 +121,7 @@ export default function NavBar() {
             Abas Farah
           </Typography>
           <Button color="inherit" href="https://github.com/abasnfarah">
-            <GitHub src="github.com/abasnfarah" />
+            <GitHub />
           </Button>
           <Button color="inherit" href="https://twitter.com/abasfarah">
             <Twitter />
@@ -126,6 +131,9 @@ export default function NavBar() {
             href="https://linkedin.com/in/abas-farah-92268682/"
           >
             <LinkedIn />
+          </Button>
+          <Button color="inherit">
+            <SettingsBrightness />
           </Button>
         </Toolbar>
       </AppBar>
