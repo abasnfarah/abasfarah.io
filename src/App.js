@@ -1,5 +1,5 @@
 import "./App.css";
-import MyAvatar from "./components/MyAvatar";
+import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
 
     <div className="App">
       <NavBar />
-      <MyAvatar />
+      <Home />
     </div>
   );
 }
