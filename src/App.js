@@ -8,7 +8,7 @@ import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import mountains from "./static/mountains.jpg";
 import ReactGA from "react-ga";
 
-const TRACKING_ID = "270626711"; // YOUR_OWN_TRACKING_ID
+const TRACKING_ID = "G-NPCZBZ79HJ"; // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
 const themeLight = createMuiTheme({
