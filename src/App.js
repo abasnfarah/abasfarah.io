@@ -6,6 +6,10 @@ import NavBar from "./components/NavBar";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import mountains from "./static/mountains.jpg";
+import ReactGA from "react-ga";
+
+const TRACKING_ID = "270626711"; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 const themeLight = createMuiTheme({
   palette: {
