@@ -99,7 +99,7 @@ const NavBar = props => {
                   <NextLink href="https://medium.com/@abasnfarah" passHref>
                   <MenuItem as={Link}>Blog</MenuItem>
                 </NextLink>
-                <NextLink href="/book" passHref>
+                <NextLink href="/books" passHref>
                   <MenuItem as={Link}>Books</MenuItem>
                 </NextLink>
                 <MenuItem
