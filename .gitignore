@@ -28,6 +28,8 @@ tags
 /.pnp
 .pnp.js
 /.next
+/.vercel
+/.env
 
 # testing
 /coverage
