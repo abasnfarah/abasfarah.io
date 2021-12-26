@@ -12,7 +12,7 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  useColorModeValue,
+  useColorModeValue
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-buttom'
@@ -71,8 +71,11 @@ const NavBar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="/works" path={path}>
-            Posts
+          <NextLink href="https://medium.com/@abasnfarah" path={path}>
+            Blog
+          </NextLink>
+          <LinkItem href="/books" path={path}>
+            Books
           </LinkItem>
         </Stack>
 
