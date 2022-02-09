@@ -94,7 +94,7 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>2022</BioYear>
-            Will be Interning @ TBA.
+            Will be Interning at Google Sunnyvale.
           </BioSection>
         </Section>
       </Container>
