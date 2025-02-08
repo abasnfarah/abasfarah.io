@@ -87,7 +87,6 @@ const NavBar = props => {
                 as={IconButton}
                 icon={<HamburgerIcon />}
                 variant="outline"
-                aria-lable="Options"
               />
               <MenuList>
                 <NextLink href="/" passHref>
@@ -96,7 +95,7 @@ const NavBar = props => {
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-                  <NextLink href="https://medium.com/@abasnfarah" passHref>
+                <NextLink href="https://medium.com/@abasnfarah" passHref>
                   <MenuItem as={Link}>Blog</MenuItem>
                 </NextLink>
                 <NextLink href="/books" passHref>
