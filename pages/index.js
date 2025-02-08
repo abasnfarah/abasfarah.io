@@ -59,14 +59,15 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            I'm a Software Engineer based in Austin, Texas with a passion for
-            building distributed systems and high-performance web applications
-            that can scale to millions of users. I currently work at Amazon Web
-            Services, where I contribute to cloud infrastructure that powers
-            millions of applications worldwide. I have experience working as a 
-            full-stack developer at Google, Coinbase and Target. When I'm not
-            coding, I enjoy reading, learning languages, and playing basketball. 
-            If you want to see what I'm currently working on check out my{' '}
+            I&apos;m a Software Engineer based in Austin, Texas with a passion
+            for building distributed systems and high-performance web
+            applications that can scale to millions of users. I currently work
+            at Amazon Web Services, where I contribute to cloud infrastructure
+            that powers millions of applications worldwide. I have experience
+            working as a full-stack developer at Google, Coinbase and Target.
+            When I&apos;m not coding, I enjoy reading, learning languages, and
+            playing basketball. If you want to see what I&apos;m currently
+            working on check out my{' '}
             <Link href="https://github.com/abasnfarah">Github</Link>.
           </Paragraph>
           <Box align="center" my={4}>
@@ -88,7 +89,7 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>2021</BioYear>
-            Began learning Spanish. Participated in Google's SPS program.
+            Began learning Spanish. Participated in Google&apos;s SPS program.
             Interned @ Coinbase.
           </BioSection>
           <BioSection>
