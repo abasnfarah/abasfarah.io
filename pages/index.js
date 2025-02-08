@@ -25,7 +25,7 @@ const Page = () => {
           mb={6}
           align="center"
         >
-          Hello, I&apos;m a full-stack devloper based in Minneapolis!
+          Hello, I&apos;m a full-stack devloper based in Austin!
         </Box>
 
         <Box display={{ md: 'flex' }}>
@@ -59,11 +59,14 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            I'm a Software Engineer based in Minneapolis with a passion for
-            building stuff. I have experience working as a full-stack developer
-            at both Coinbase and Target. When I'm not building stuff, I enjoy
-            reading, learning languages and playing basketball. If you want to
-            see what I'm currently working on check out my{' '}
+            I'm a Software Engineer based in Austin, Texas with a passion for
+            building distributed systems and high-performance web applications
+            that can scale to millions of users. I currently work at Amazon Web
+            Services, where I contribute to cloud infrastructure that powers
+            millions of applications worldwide. I have experience working as a 
+            full-stack developer at Google, Coinbase and Target. When I'm not
+            coding, I enjoy reading, learning languages, and playing basketball. 
+            If you want to see what I'm currently working on check out my{' '}
             <Link href="https://github.com/abasnfarah">Github</Link>.
           </Paragraph>
           <Box align="center" my={4}>
@@ -80,10 +83,6 @@ const Page = () => {
             Bio
           </Heading>
           <BioSection>
-            <BioYear>1996</BioYear>
-            Born in Thika, Kenya.
-          </BioSection>
-          <BioSection>
             <BioYear>2020</BioYear>
             Spent the summer Interning @ Target.
           </BioSection>
@@ -94,7 +93,15 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>2022</BioYear>
-            Will be Interning at Google Sunnyvale.
+            Interned @ Google.
+          </BioSection>
+          <BioSection>
+            <BioYear>2023</BioYear>
+            Interned @ Amazon Web Services.
+          </BioSection>
+          <BioSection>
+            <BioYear>2024</BioYear>
+            Started as a Software Engineer @ Amazon Web Services.
           </BioSection>
         </Section>
       </Container>
