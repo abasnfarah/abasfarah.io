@@ -8,6 +8,9 @@
     "prettier": "prettier -write .",
     "lint": "next lint"
   },
+  "engines": {
+    "node": ">=22.13.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/abasnfarah/abasnfarah.github.io.git"
